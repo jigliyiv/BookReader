@@ -1,0 +1,15 @@
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\bin\Debug\BookReaderDemo.exe.config
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\bin\Debug\BookReaderDemo.exe
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\bin\Debug\BookReaderDemo.pdb
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.csprojAssemblyReference.cache
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\MainWindow.g.cs
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\App.g.cs
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo_MarkupCompile.cache
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo_MarkupCompile.lref
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\MainWindow.baml
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.g.resources
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.Properties.Resources.resources
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.csproj.GenerateResource.cache
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.csproj.CoreCompileInputs.cache
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.exe
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.pdb

@@ -1,0 +1,67 @@
+﻿<Window x:Class="BookReaderDemo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BookReaderDemo"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="900">
+    <Window.Resources>
+        <Style TargetType="Menu">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+        <Style  TargetType="TreeViewItem">
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Foreground" Value="DarkBlue"/>
+            <Setter Property="IsExpanded" Value="True"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+        </Style>
+       
+    </Window.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Документы">
+                <MenuItem Header="Открыть для чтения"/>
+                <MenuItem Header="Закрыть документ"/>
+                <MenuItem Header="Выйти из программы"/>
+            </MenuItem>
+            <MenuItem Header="Редактирование">
+                <MenuItem Header="Открыть для редактирования"/>
+                <MenuItem Header="Выйти из редактирования"/>
+            </MenuItem>
+            <MenuItem Header="О программе">
+                <MenuItem Header="Об авторе"/>
+                <MenuItem Header="История версий"/>
+            </MenuItem>
+        </Menu>
+        <TreeView>
+            <TreeViewItem>
+                <TreeViewItem.Header>
+                    <WrapPanel>
+                        <Image Source="Images/1.png" Width="25"/>
+                        <TextBlock>Руководство пользователя</TextBlock>
+                    </WrapPanel>
+                </TreeViewItem.Header>
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <WrapPanel>
+                            <Image Source="Images/2.png" Width="25"/>
+                            <TextBlock>Введение</TextBlock>
+                        </WrapPanel>
+                    </TreeViewItem.Header>
+                        <TreeViewItem Header="История WPF"/>
+                        <TreeViewItem Header="Возможности WPF"/>
+                        <TreeViewItem Header="Перспективы WPF"/>
+                 </TreeViewItem>
+                 <TreeViewItem Header="Контейнеры компоновки WPF"/>
+                 <TreeViewItem Header="Базовые элементы управления"/>
+                 <TreeViewItem Header="Списочные элементы управления"/>
+                 <TreeViewItem Header="Составные элементы управления"/>
+            </TreeViewItem>
+        </TreeView>
+        <FlowDocumentReader>
+            
+        </FlowDocumentReader>
+    </DockPanel>
+</Window>
