@@ -5,62 +5,69 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookReaderDemo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="900">
+        Title="MainWindow" Height="650" Width="1000">
     <Window.Resources>
+        <XmlDataProvider x:Key="content" Source="Data/Content.xml"/>
         <Style TargetType="Menu">
             <Setter Property="FontSize" Value="18"/>
             <Setter Property="FontWeight" Value="Bold"/>
         </Style>
         <Style  TargetType="TreeViewItem">
-            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="FontSize" Value="14"/>
             <Setter Property="Foreground" Value="DarkBlue"/>
-            <Setter Property="IsExpanded" Value="True"/>
             <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="IsExpanded" Value="True"/>
         </Style>
        
     </Window.Resources>
     <DockPanel>
         <Menu DockPanel.Dock="Top">
-            <MenuItem Header="Документы">
+            <MenuItem>
+                <MenuItem.Header>
+                    <WrapPanel>
+                        <Image Source="Images/100.png" Width="15"/>
+                        <TextBlock>Документы</TextBlock>
+                    </WrapPanel>
+                </MenuItem.Header>
                 <MenuItem Header="Открыть для чтения"/>
                 <MenuItem Header="Закрыть документ"/>
                 <MenuItem Header="Выйти из программы"/>
             </MenuItem>
-            <MenuItem Header="Редактирование">
+            <MenuItem>
+                <MenuItem.Header>
+                    <WrapPanel>
+                        <Image Source="Images/101.png" Width="20"/>
+                        <TextBlock>Редактирование</TextBlock>
+                    </WrapPanel>
+                </MenuItem.Header>
                 <MenuItem Header="Открыть для редактирования"/>
                 <MenuItem Header="Выйти из редактирования"/>
             </MenuItem>
-            <MenuItem Header="О программе">
+            <MenuItem>
+                <MenuItem.Header>
+                    <WrapPanel>
+                        <Image Source="Images/102.png" Width="20"/>
+                        <TextBlock>О программе</TextBlock>
+                    </WrapPanel>
+                </MenuItem.Header>
                 <MenuItem Header="Об авторе"/>
                 <MenuItem Header="История версий"/>
             </MenuItem>
         </Menu>
-        <TreeView>
-            <TreeViewItem>
-                <TreeViewItem.Header>
+        <TreeView x:Name="ListOfContent" 
+                  ItemsSource="{Binding Source={StaticResource content}, XPath=book}"
+                  SelectedValuePath="@id"
+                  SelectedItemChanged="ListOfContent_SelectedItemChanged">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate ItemsSource="{Binding XPath=item}">
                     <WrapPanel>
-                        <Image Source="Images/1.png" Width="25"/>
-                        <TextBlock>Руководство пользователя</TextBlock>
+                        <Image Source="{Binding XPath=@icon}" Width="15"/>
+                        <TextBlock Text="{Binding XPath=@name}" VerticalAlignment="Center"/>
                     </WrapPanel>
-                </TreeViewItem.Header>
-                <TreeViewItem>
-                    <TreeViewItem.Header>
-                        <WrapPanel>
-                            <Image Source="Images/2.png" Width="25"/>
-                            <TextBlock>Введение</TextBlock>
-                        </WrapPanel>
-                    </TreeViewItem.Header>
-                        <TreeViewItem Header="История WPF"/>
-                        <TreeViewItem Header="Возможности WPF"/>
-                        <TreeViewItem Header="Перспективы WPF"/>
-                 </TreeViewItem>
-                 <TreeViewItem Header="Контейнеры компоновки WPF"/>
-                 <TreeViewItem Header="Базовые элементы управления"/>
-                 <TreeViewItem Header="Списочные элементы управления"/>
-                 <TreeViewItem Header="Составные элементы управления"/>
-            </TreeViewItem>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
         </TreeView>
-        <FlowDocumentReader>
+        <FlowDocumentReader x:Name="reader">
             
         </FlowDocumentReader>
     </DockPanel>

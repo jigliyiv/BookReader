@@ -13,3 +13,5 @@ C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderD
 C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.csproj.CoreCompileInputs.cache
 C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.exe
 C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\BookReaderDemo.pdb
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\Pages\100.baml
+C:\Users\Illya\Downloads\WPF\2018.09.05_11_bookReader\BookReaderDemo\BookReaderDemo\obj\Debug\Pages\101.baml

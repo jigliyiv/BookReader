@@ -1,1 +1,12 @@
-﻿<?xml version="1.0" encoding="utf-8" ?> 
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<book id="0" name="Руководство пользователя" icon="Images/201.png">
+  <item id="100" name="Введение" icon="Images/202.png">
+    <item id="101" name="История WPF" icon="Images/203.png"/>
+    <item id="102" name="Возможности WPF" icon="Images/203.png"/>
+    <item id="103" name="Перспективы WPF" icon="Images/203.png"/>
+  </item>
+  <item id="201" name="Контейнеры компоновки WPF" icon="Images/202.png"/>
+  <item id="202" name="Базовые элементы управления" icon="Images/202.png"/>
+  <item id="203" name="Списочные элементы управления" icon="Images/202.png"/>
+  <item id="204" name="Составные элементы управления" icon="Images/202.png"/>
+</book>

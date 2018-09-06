@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("data/content.xml")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("images/doc100/introduction.jpg")]
 
 
